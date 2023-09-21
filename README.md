@@ -450,6 +450,9 @@ Watch Usage
 
 ```
 
+Use `fit()` to run a single test. (`test.only`)
+Use `xit()` to skip a test. (`test.skip`)
+
 # Code Coverage
 
 # Assertions
