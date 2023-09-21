@@ -383,6 +383,44 @@ Watch Usage: Press w to show more.
 ```
 
 # Grouping Tests
+If you prefer your test to be organized into groups, you can
+use the global `describe` method, that JEST provides.
+
+### `.describe`
+```
+describe(<name>, <function>)
+```
+
+- The first argument is the group name.
+- The second argument is a function that contains the expectations to test.
+
+```
+ PASS  src/components/greeet/Greet.test.tsx
+  Greet Component
+    ✓ Greet renders correctly (20 ms)
+    ✓ Greet renders a name (3 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.733 s, estimated 1 s
+Ran all test suites related to changed files.
+
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+```
+It is possible to use the methods `.only` and `.skip` in the tests wrapped
+by the `.describe.only(` method.
+
+It is possible to nest the describe blocks.
+
+We can have multiple describe blocks into `*.test.tsx` file.
+
 
 # Filename Conventions
 
