@@ -421,8 +421,34 @@ It is possible to nest the describe blocks.
 
 We can have multiple describe blocks into `*.test.tsx` file.
 
-
 # Filename Conventions
+- Files with `.test.js` or `.test.tsx` suffix.
+- Files with `.spec.js` or `.spec.tsx` suffix.
+- File with `.js` or `.tsx` suffix in `__tests__` folders.
+
+Recommendation is to always put your tests next to the code they are testing so
+that relative imports are shorter.
+
+```
+ PASS  src/components/greeet/Greet.test.tsx
+ PASS  src/components/greeet/Greet.spec.tsx
+ PASS  src/__tests__/Greet.tsx
+
+Test Suites: 3 passed, 3 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        1.409 s
+Ran all test suites related to changed files.
+
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+
+```
 
 # Code Coverage
 
