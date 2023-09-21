@@ -203,3 +203,128 @@ Watch Usage: Press w to show more.
 
 It is able to run the App.test.tsx, which is testing that the 
 component is able to render the `learn react` link.
+
+# Anatomy of a Test
+In the file `./src/App.test.tsx` we call a function `test`, let's see the Function
+signature:
+
+```
+test(<name>, <fn>, <timeout>)
+```
+
+1. The first argument <name> is the test name used to identify the test.
+2. The second argument <fn> is a function that contains the expectations to test.
+3. The third argument <timeout> is an optional argument for specifying how
+long to wait before aborting the test. The default timeout value is 5 seconds.
+
+For the example:
+```
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+```
+`<name>`:`renders learn react link`
+
+The second argument <fn> is a function that contains the expectations to test. This
+is where RTL comes into picture, we begin by creating a virtual DOM of the app
+component using `render` method from react testing library.
+
+The `screen` object is a utility from react testing library that allows us to query
+the virtual DOM. In this case we are querying the text `learn react` using regex.
+
+NOTE: The `test` and `expect` are both function from jest, the CRA globally provides them in 
+any test, there is no need to import them.
+
+# Your first Test
+
+# Test Driven Development
+
+# JEST Watch mode
+
+# Filtering Tests
+
+# Grouping Tests
+
+# Filename Conventions
+
+# Code Coverage
+
+# Assertions
+
+# What to test?
+
+# React Testing Library(RTL) Queries
+
+# getByRole
+
+# getByRole Options
+
+# getByLabelText
+
+# getByPlaceholderText
+
+# getByText
+
+# getByDisplayValue
+
+# getByAltText
+
+# getByTitle
+
+# getByTestId
+
+# Priority Order for Queries
+
+# Query Multiple Elements
+
+# TextMatch
+
+# queryBy
+
+# findBy
+
+# Manual Queries
+
+# Debugging
+
+# Testing Playground
+
+# User Interactions
+
+# Pointer Interactions
+
+# Keyboard Interactions
+
+# Providers
+
+# Custom Render Functions
+
+# Custom React Hooks
+
+# Act Utility
+
+# Mocking Functions
+
+# Mocking HTTP Request
+
+# MSW Setup
+
+# MSW Handlers
+
+# Testing with MSW
+
+# MSW Error Handling
+
+# Static Analysis Testing
+
+# Eslint
+
+# Prettier
+
+# Husky
+
+# lint-staged
+
+# Wrapping
