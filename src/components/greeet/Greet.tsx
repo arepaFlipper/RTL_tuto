@@ -5,7 +5,7 @@ type TGreet = {
 const Greet = ({ name }: TGreet) => {
   return (
     <>
-      <h1>Hello {name}</h1>
+      <h1>Hello  {name}</h1>
     </>
   )
 }

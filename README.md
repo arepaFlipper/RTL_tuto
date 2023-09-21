@@ -280,6 +280,23 @@ passed state.
 - TDD
 
 # JEST Watch mode
+When we run `yarn test` we actually execute "react-scripts test" in watch mode.
+
+### JEST Watch mode
+- Watch mode is an option that we can pass to JEST asking to watch files that have
+changed since the last commit and execute tests related only to those changed
+files.
+
+- An optimization designed to make your tests run fast regardless of how many
+tests you have.
+
+If we make slight changes to the code, these changes are going to be visible 
+by Git. The benefit of the Watch mode is that it will only trigger the tests that
+are related to the changed files. Even though we have a test in `app.test.tsx` 
+JEST will not pick that up; this is actually a helpful feature once your code
+base grows in size and you have hundreds of tests. You would be interested in 
+the files you are currently working on and watch mode will help with that.
+
 
 # Filtering Tests
 
