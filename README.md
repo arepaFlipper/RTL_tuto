@@ -270,6 +270,15 @@ Once the tests have been written, you then write the code to ensure the tests pa
 Also called red-green testing as all tests go from a red failed state to a green 
 passed state.
 
+# Section Summary
+- What is an automated test
+- Types of automated tests
+- JEST vs React Testing Library (RTL)
+- React project setup using (CRA)
+- Anatomy of a test
+- Write our first test
+- TDD
+
 # JEST Watch mode
 
 # Filtering Tests
