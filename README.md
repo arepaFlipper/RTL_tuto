@@ -352,6 +352,20 @@ Watch Usage: Press w to show more.
 
 By applying this filter we have 2 tests skipped.
 
+Also we can use the `.only()` method to specify the tests we want to run:
+```
+ PASS  src/components/greeet/Greet.test.tsx
+  ✓ Greet renders a name (20 ms)
+  ○ skipped Greet renders correctly
+
+Test Suites: 1 passed, 1 total
+Tests:       1 skipped, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.462 s, estimated 1 s
+Ran all test suites matching /src\/components\/greeet\/Greet\.test\.tsx/i.
+
+Watch Usage: Press w to show more.
+```
 # Grouping Tests
 
 # Filename Conventions
