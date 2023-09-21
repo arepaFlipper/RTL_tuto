@@ -366,6 +366,22 @@ Ran all test suites matching /src\/components\/greeet\/Greet\.test\.tsx/i.
 
 Watch Usage: Press w to show more.
 ```
+
+Use the `.skip()` method to specify the tests we want to skip:
+```
+ PASS  src/components/greeet/Greet.test.tsx
+  ✓ Greet renders correctly (19 ms)
+  ○ skipped Greet renders a name
+
+Test Suites: 1 passed, 1 total
+Tests:       1 skipped, 1 passed, 2 total
+Snapshots:   0 total
+Time:        0.359 s, estimated 1 s
+Ran all test suites related to changed files.
+
+Watch Usage: Press w to show more.
+```
+
 # Grouping Tests
 
 # Filename Conventions
