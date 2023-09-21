@@ -237,7 +237,25 @@ the virtual DOM. In this case we are querying the text `learn react` using regex
 NOTE: The `test` and `expect` are both function from jest, the CRA globally provides them in 
 any test, there is no need to import them.
 
-# Your first Test
+#  Your first Test
+JEST automatically finds new files with `*.test.tsx` and runs them:
+```
+❯ yarn test
+ PASS  src/components/greeet/Greet.test.tsx
+  ✓ Greet renders correctly (32 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.219 s, estimated 2 s
+Ran all test suites related to changed files.
+```
+
+We see the test name which is Greet renders correctly and the status is passed.
+Keep in mind tests that never fail are also useless, the goal of having tests is 
+for them to fail when the application misbehaves.
+
+Use regex to ignore the Capital letters `/hello/i`.
 
 # Test Driven Development
 
