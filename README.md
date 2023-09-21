@@ -148,3 +148,58 @@ if we look at `./node_modules/react-scripts/package.json` we can see that JEST i
 Which means it is a sub dependency in react-scripts. But also there is a folder in the path 
 `./node_modules/jest/`
 
+# Running Tests
+By default CRA includes a testing section:
+
+- There is a file `./src/App.test.tsx`.
+- To run the test:
+```
+❯ yarn test
+
+ PASS  src/App.test.tsx
+  ✓ renders learn react link (31 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        1.098 s
+Ran all test suites related to changed files.
+
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+```
+
+This starts the tests in what is called a watch mode.
+Press `a` to run all tests:
+
+```
+ PASS  src/App.test.tsx
+  ✓ renders learn react link (26 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.398 s, estimated 1 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
+```
+
+It is able to run the App.test.tsx, which is testing that the 
+component is able to render the `learn react` link.
