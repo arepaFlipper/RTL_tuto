@@ -297,6 +297,12 @@ JEST will not pick that up; this is actually a helpful feature once your code
 base grows in size and you have hundreds of tests. You would be interested in 
 the files you are currently working on and watch mode will help with that.
 
+If we commit the changes, and re-run `yarn test` we will see:
+`No tests found related to files changed since last commit.`
+
+If we make a change to `./src/components/greeet/Greet.test.tsx` and run `yarn test`
+JEST is going to detect the changes present in the file and run the tests
+
 
 # Filtering Tests
 
