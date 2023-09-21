@@ -303,8 +303,54 @@ If we commit the changes, and re-run `yarn test` we will see:
 If we make a change to `./src/components/greeet/Greet.test.tsx` and run `yarn test`
 JEST is going to detect the changes present in the file and run the tests
 
-
 # Filtering Tests
+Every time you run `yarn test` JEST, it is going to display the menu:
+```
+❯ yarn test
+...
+Watch Usage
+ › Press `a` to run all tests.
+ › Press `f` to run only failed tests.
+ › Press `q` to quit watch mode.
+ › Press `p` to filter by a filename regex pattern. 
+ › Press `t` to filter by a test name regex pattern.
+ › Press `Enter` to trigger a test run.
+```
+
+We can press `a` to execute all tests including the `./src/App.test.tsx`, after 
+pressing that, we find something like:
+```
+Watch Usage
+ › Press f to run only failed tests.
+ › Press o to only run tests related to changed files.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+```
+
+Press `o` to have the most basic filtering. Which run tests based on the current
+uncommitted changes.
+
+Press `p` to filter by a filename regex pattern. Something like `App`, it is 
+going to find `./src/App.test.tsx` to run.
+
+Press `t` to filter by a test name regex pattern. Something like `name`, it is 
+going to find `./src/components/greeet/Greet.test.tsx` which its name include 
+the word `name` to run:
+```
+ PASS  src/components/greeet/Greet.test.tsx
+
+Test Suites: 1 skipped, 1 passed, 1 of 2 total
+Tests:       2 skipped, 1 passed, 3 total
+Snapshots:   0 total
+Time:        1.177 s
+Ran all test suites with tests matching "^Greet renders a name$".
+
+Watch Usage: Press w to show more.
+```
+
+By applying this filter we have 2 tests skipped.
 
 # Grouping Tests
 
@@ -388,4 +434,4 @@ JEST is going to detect the changes present in the file and run the tests
 
 # lint-staged
 
-# Wrapping
+# Wrapping                                          t
