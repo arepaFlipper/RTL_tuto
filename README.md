@@ -123,3 +123,29 @@ Refactoring will not affect your test as long as the end result is the same.
 in the rest of the series.
 
 # What is a Test?
+
+# Project Setup
+
+1. make sure you have node.js installed
+```
+❯ node --version
+v18.18.0
+```
+2. make sure you have git installed, this is important to understand an aspect of JEST which we
+will learn in a few videos.
+```
+❯ git --version
+git version 2.42.0
+```
+3. open you IDE inside the project folder
+4. Use CRA:
+```
+❯ npm create vite@latest .
+❯ npm install @testing-library/react @testing-library/jest-dom --save-dev
+```
+
+In this template the JEST seems to be not included in the package.json dependency list. But 
+if we look at `./node_modules/react-scripts/package.json` we can see that JEST is included.
+Which means it is a sub dependency in react-scripts. But also there is a folder in the path 
+`./node_modules/jest/`
+
