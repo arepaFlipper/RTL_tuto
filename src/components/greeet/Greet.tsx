@@ -1,8 +1,12 @@
-type Props = {}
+type TGreet = {
+  name?: string;
+}
 
-const Greet = ({ }: Props) => {
+const Greet = ({ name }: TGreet) => {
   return (
-    <div>Hello</div>
+    <>
+      <h1>Hello {name}</h1>
+    </>
   )
 }
 
