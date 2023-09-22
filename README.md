@@ -717,6 +717,9 @@ Typically, you'd use this to find paragraph, div or span elements.
 has the matching display value.
 
 # getByAltText
+`getByAltText` will return the element that has the given alt text
+This method only supports elements which accept an `alt` attribute like `<img>`,
+`<input>`, `<area>` or custom HTML elements.
 
 # getByTitle
 

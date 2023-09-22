@@ -13,6 +13,9 @@ describe("Application Testing", () => {
     const paragraphElement = screen.getByText(/all fields are mandatory/i);
     expect(paragraphElement).toBeInTheDocument();
 
+    const imageElement = screen.getByAltText("a person with a laptop");
+    expect(imageElement).toBeInTheDocument();
+
     // const nameElement = screen.getByRole('textbox', { name: "name" });
     const nameElement = screen.getByRole('textbox', { name: "Name" });
     expect(nameElement).toBeInTheDocument();
