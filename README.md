@@ -700,6 +700,8 @@ which number matches w/ the tag `<h level>` number.
 preference for just about everything.
 
 # getByLabelText
+`getByLabelText` will search for the label that matches the given text, then find the
+element associated with that label.
 
 # getByPlaceholderText
 
