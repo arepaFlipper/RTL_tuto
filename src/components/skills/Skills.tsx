@@ -7,7 +7,7 @@ const Skills = ({ skills }: TSkills) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoggedIn(true);
-    }, 500);
+    }, 1500);
   }, []);
 
   return (

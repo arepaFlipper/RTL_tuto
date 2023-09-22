@@ -907,6 +907,7 @@ after a default timeout of `1000ms`.
 - Returns a promise which resolves to an array of elements when any elements are 
 found which match the given query.
 - The promise is rejected if no elements are found after a default timeout of `1000ms`.
+- The test will fail if the component takes more than `1000ms` to render.
 
 # Manual Queries
 
