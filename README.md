@@ -681,6 +681,8 @@ The accessible name is for simple cases equal to:
   <li>the value of the aria-label attribute</li>
 </ol>
 
+The tags `<h1>` to `<h6>` have the role of heading.
+
 # getByLabelText
 
 # getByPlaceholderText
