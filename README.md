@@ -783,6 +783,74 @@ Every `getBy..` query has its corresponding `getAllBy..` query
 
 
 # TextMatch
+##### RTL queries used so far
+```
+const pageHeading = screen.getByRole("heading");
+const nameElement2 = screen.getByLabelText("Name");
+const nameElement3 = screen.getByPlaceholderText("Fullname");
+const paragraphElement = screen.getByText("All fields are mandatory");
+const nameElement4 = screen.getByDisplayValue("Vishwas");
+const imageElement = screen.getByAltText("a person with a laptop")
+const closeElement = screen.getByTitle("close");
+const customElement = screen.getByTestId("custom-element");
+const listItemElement = screen.getByAllRole("listItem");
+```
+
+The type of the first argument received by a `getBy..` query is string. In the
+case of `getAllBy..` queries, the first argument type is what is called `TextMatch`.
+
+`TextMatach` represents a type which can be either a:
+- string
+- regex
+- function
+
+### TextMatch - string
+
+From the DOM:
+```
+<div>Hello World</div>
+```
+The queries bellow could match the DOM element above:
+```
+screen.getByText('Hello world'); //full String match
+```
+
+```
+screen.getByText('llo world', {exact:false}); // sub-String match
+```
+
+```
+screen.getByText('Hello world', {exact:false}); //ignore case
+```
+
+### TextMatch - regex
+```
+<div>Hello World</div>
+```
+
+```
+screen.getByText(/World/); //sub-string match
+```
+```
+screen.getByText(/world/i); // sub-String match, ignore case
+```
+
+```
+screen.getByText(/^hello world$/i); //full string match, ignore case
+```
+
+### TextMatch - custom function
+```
+(content?: string, element?: Element | null)=> boolean
+```
+
+```
+<div>Hello World</div>
+```
+
+```
+screen.getByText((content)=>content.startsWith('Hello'));
+```
 
 # queryBy
 
