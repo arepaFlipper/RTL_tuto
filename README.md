@@ -686,6 +686,19 @@ The tags `<h1>` to `<h6>` have the role of heading.
 Another way to test the role heading is by using the level option,
 which number matches w/ the tag `<h level>` number.
 
+### getByRole Options
+<ul>
+  <li>name</li>
+  <li>level</li>
+  <li>hidden</li>
+  <li>selected</li>
+  <li>checked</li>
+  <li>pressed</li>
+</ul>
+
+<span style="color:cyan;">Suggestion:</span> The `getByRole` method should be your top
+preference for just about everything.
+
 # getByLabelText
 
 # getByPlaceholderText
