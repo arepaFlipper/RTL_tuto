@@ -2,7 +2,7 @@ export const Application = () => {
   return (
     <>
       <h1>Job application form</h1>
-      <h2>Section 1</h2>
+      <h5>Section 1</h5>
       <form>
         <div>
           <label htmlFor="name">Name</label>

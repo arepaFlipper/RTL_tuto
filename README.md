@@ -683,6 +683,9 @@ The accessible name is for simple cases equal to:
 
 The tags `<h1>` to `<h6>` have the role of heading.
 
+Another way to test the role heading is by using the level option,
+which number matches w/ the tag `<h level>` number.
+
 # getByLabelText
 
 # getByPlaceholderText
