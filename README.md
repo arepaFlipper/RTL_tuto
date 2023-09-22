@@ -539,6 +539,33 @@ does not guarantee that you have written good tests covering critical
 parts of your application. An 80% coverage is well accepted goal to aim.
 
 # Assertions
+When writing test, we often need to check that values meet certain conditions.
+Assertions decide if a test passes or fails.
+### expect method
+```
+.expect(<value>)
+```
+The argument should be the value that your code produces.
+
+Typically, you will use expect along with a "matcher" function to assert something
+about a value
+
+A matcher can optionally accept an argument which is the correct expected value.
+
+If you visit <a href="https://jestjs.io/docs/using-matchers" target="_blank">Using Matchers</a> 
+you may find the most common used matchers.
+
+If you visit <a href="https://github.com/testing-library/jest-dom#custom-matchers" target="_blank">Github repo</a> 
+you may find the most common used matchers, as well.
+
+**NOTE**: JEST-dom is installed by CRA defaults. We can verify it in the `package.json` 
+dependency list:
+```
+"@testing-librarwyy/jest-dom": "^5.14.1"
+```
+And we head onto `./src/setupTests.ts`  the whole package in being imported, this
+file in `CRA` and it will automatically executed before JEST runs a test.
+
 
 # What to test?
 
