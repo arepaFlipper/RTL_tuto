@@ -566,6 +566,13 @@ dependency list:
 And we head onto `./src/setupTests.ts`  the whole package in being imported, this
 file in `CRA` and it will automatically executed before JEST runs a test.
 
+# Section Summary
+- Jest watch mode.
+- Filtering tests.
+- Grouping tests.
+- Filename conventions.
+- Code coverage
+- Assertions
 
 # What to test?
 
