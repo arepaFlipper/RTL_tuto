@@ -728,6 +728,36 @@ This method only supports elements which accept an `alt` attribute like `<img>`,
 `getByTestId` returns the element that has the matching `data-testid` attribute.
 
 # Priority Order for Queries
+> "Your test should resemble how users interact with your code (component, page, etc.)
+as mush as possible"
+
+The recommended order priority is:
+<ol>
+  <li>getByRole</li>
+  <li>getByLabelText</li>
+  <li>getByPlaceholderText</li>
+  <li>getByText</li>
+  <li>getByDisplayValue</li>
+  <li>getByAltText</li>
+  <li>getByTitle</li>
+  <li>getByTestId</li>
+</ol>
+
+# Section Summary
+RTL queries
+8 different query methods:
+<ol>
+  <li>getByRole</li>
+  <li>getByLabelText</li>
+  <li>getByPlaceholderText</li>
+  <li>getByText</li>
+  <li>getByDisplayValue</li>
+  <li>getByAltText</li>
+  <li>getByTitle</li>
+  <li>getByTestId</li>
+</ol>
+
+Order of priority for using queries.
 
 # Query Multiple Elements
 
