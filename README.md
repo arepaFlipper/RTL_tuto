@@ -654,8 +654,20 @@ specify a different role, the role attribute can be used to add the desired role
 
 To use an anchor element as a button in the `navbar`, you can add `role='button'`
 
+To research the role of each element visit:
+<a href="https://testing-library.com/docs/queries/byrole" target="_blank">`ByRole` section</a>
 
+And for more information visit:
+<a href="https://w3.org/TR/html-aria/#docconformance" target="_blank">
+  table of HTML elements with their default and desired roles
+</a>
 
+<span style="color:cyan;">Summary:</span> The `getByRole` queries for elements with the given role. 
+The role can be any default role present on an element or the role added using the role attribute.
+To get a glimpse of all the HTML elements and their corresponding role visit: 
+<a href="https://w3.org/TR/html-aria/#docconformance" target="_blank">
+  table of HTML elements with their default and desired roles
+</a>
 # getByRole Options
 
 # getByLabelText
