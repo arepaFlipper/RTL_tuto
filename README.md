@@ -760,6 +760,27 @@ RTL queries
 Order of priority for using queries.
 
 # Query Multiple Elements
+### RTL `getAllBy..` Queries
+- Find multiple elements in the DOM.
+- `getAllBy` returns an array of all matching nodes for a query, and throws an error if
+no elements match.
+
+Every `getBy..` query has its corresponding `getAllBy..` query
+
+| `getBy..`  | `getAllBy..`  |
+|-------------- | ------- |
+| `getByRole` | `getAllByRole`    |
+| `getByLabelText` | `getAllByLabelText`    |
+| `getByPlaceholderText` | `getAllByPlaceholderText`    |
+| `getByText` | `getAllByText`    |
+| `getByDisplayValue` | `getAllByDisplayValue`    |
+| `getByAltText` | `getAllByAltText`    |
+| `getByTitle` | `getAllByTitle`    |
+| `getByTestId` | `getAllByTestId`    |
+
+## `getAllByRole` Query
+
+
 
 # TextMatch
 
