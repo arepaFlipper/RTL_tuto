@@ -853,6 +853,27 @@ screen.getByText((content)=>content.startsWith('Hello'));
 ```
 
 # queryBy
+### queryBy and queryAllBy
+
+#### queryBy
+- Returns the matching node for a query, and return null if no elements match.
+- Useful for asserting an element that is not present.
+- Throws an error if more than one match is found.
+
+#### queryAllBy
+- Returns an array of all matching nodes for a query, and return an **empty array ([])** 
+if no elements match.
+
+| `getBy..`  | `getAllBy..`  |
+|-------------- | ------- |
+| `getByRole` | `getAllByRole`    |
+| `getByLabelText` | `getAllByLabelText`    |
+| `getByPlaceholderText` | `getAllByPlaceholderText`    |
+| `getByText` | `getAllByText`    |
+| `getByDisplayValue` | `getAllByDisplayValue`    |
+| `getByAltText` | `getAllByAltText`    |
+| `getByTitle` | `getAllByTitle`    |
+| `getByTestId` | `getAllByTestId`    |
 
 # findBy
 

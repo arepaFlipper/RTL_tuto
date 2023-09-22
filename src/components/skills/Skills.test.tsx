@@ -18,5 +18,18 @@ describe('Skills', () => {
     // expect(listElement).toHaveLength(3); //avoid hard coded values
     expect(listElement).toHaveLength(skills.length);
     // expect(listElement_fail).toHaveLength(skills.length);
+    //
   })
+
+  test('renders Login button', () => {
+    render(<Skills skills={skills} />);
+    const loginButton = screen.getByRole('button', { name: /login/i })
+    expect(loginButton).toBeInTheDocument();
+  });
+
+  test('Start Learning button is not rendered', () => {
+    render(<Skills skills={skills} />);
+    const startLearningButton = screen.queryByRole('button', { name: /start learning/i });
+    expect(startLearningButton).not.toBeInTheDocument();
+  });
 })
