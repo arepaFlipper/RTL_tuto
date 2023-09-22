@@ -895,6 +895,18 @@ click this button it displays "Start Learning". There is no query that waits for
 an element to appear on the screen.
 Initially the is logged in is `false` and the "Start Learning" button is hidden.
 
+For solve this problem:
+## `findBy` and `findAllBy`
+### `findBy`
+- Returns a Promise which resolves when an element is found which matches the
+given query.
+- The promise is rejected if no element is found or if more than one element is found
+after a default timeout of `1000ms`.
+
+### `findAllBy`
+- Returns a promise which resolves to an array of elements when any elements are 
+found which match the given query.
+- The promise is rejected if no elements are found after a default timeout of `1000ms`.
 
 # Manual Queries
 
