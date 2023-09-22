@@ -708,6 +708,9 @@ element associated with that label.
 find one that matches the given text.
 
 # getByText
+`getByText` will search for all elements that have a text node with textContent
+matching the given text.
+Typically, you'd use this to find paragraph, div or span elements.
 
 # getByDisplayValue
 

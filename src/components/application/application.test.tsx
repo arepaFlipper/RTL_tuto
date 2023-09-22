@@ -10,6 +10,9 @@ describe("Application Testing", () => {
     const sectionHeading = screen.getByRole('heading', { level: 5 });
     expect(sectionHeading).toBeInTheDocument();
 
+    const paragraphElement = screen.getByText(/all fields are mandatory/i);
+    expect(paragraphElement).toBeInTheDocument();
+
     // const nameElement = screen.getByRole('textbox', { name: "name" });
     const nameElement = screen.getByRole('textbox', { name: "Name" });
     expect(nameElement).toBeInTheDocument();
