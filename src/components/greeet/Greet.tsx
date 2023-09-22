@@ -1,11 +1,9 @@
-type TGreet = {
-  name?: string;
-}
+import { TGreet } from './Greet.types';
 
 const Greet = ({ name }: TGreet) => {
   return (
     <>
-      <h1>Hello  {name}</h1>
+      <h1>Hello {name ? name : "Guest"}</h1>
     </>
   )
 }

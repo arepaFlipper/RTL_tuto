@@ -454,6 +454,89 @@ Use `fit()` to run a single test. (`test.only`)
 Use `xit()` to skip a test. (`test.skip`)
 
 # Code Coverage
+A metric that can help you understand how much of your software code 
+is tested:
+
+- Statement coverage: how many of the statements in the software code have
+been executed.
+
+- Branches coverage: how many of the branches of the control structures (if
+statements for instance) have been executed.
+
+- Function coverage: how many of the functions defined have been called and
+finally.
+
+- Line coverage: how many of lines of source code have been tested.
+
+```
+ PASS  src/App.test.tsx
+ PASS  src/components/greeet/Greet.test.tsx
+-----------------------|---------|----------|---------|---------|-------------------
+File                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-----------------------|---------|----------|---------|---------|-------------------
+All files              |   21.42 |        0 |      50 |   21.42 |
+ src                   |    8.33 |        0 |   33.33 |    8.33 |
+  App.tsx              |     100 |      100 |     100 |     100 |
+  index.tsx            |       0 |      100 |     100 |       0 | 7-19
+  reportWebVitals.ts   |       0 |        0 |       0 |       0 | 3-10
+ src/components/greeet |     100 |      100 |     100 |     100 |
+  Greet.tsx            |     100 |      100 |     100 |     100 |
+-----------------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 2 passed, 2 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        1.922 s, estimated 2 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
+```
+
+The columns:
+- `File` The file name.
+- `% Stmts` Statement coverage percentage.
+- `% Branch` Branch coverage percentage.
+- `% Funcs` Functions coverage percentage.
+- `% Lines` Lines coverage percentage.
+- `Uncovered Line #s` The range of lines numbers that are not covered.
+
+Generally you want to address the red numbers in the report by writing
+tests that will turn them into green.
+
+We know for the fact that there is not need to include the files `reportWebVitals.ts`
+and `index.tsx` in the coverage report. So we can ignore them by using:
+```
+yarn test --coverage --watchAll --collectCoverageFrom='src/components/**/*.{ts,tsx}' --collectCoverageFrom='!src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'
+```
+Also we ignore the files for declare types and stories.
+
+#### Coverage Thresholds
+With JEST it is possible to specify a minimum threshold enforcement
+for coverage reports. If threshold are not met, JEST will fail. For
+example we can add the following JEST key configuration into `package.json` :
+```
+"jest": {
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": -10
+    }
+  }
+}
+```
+
+As we defined if we run the tests, this are going to warn:
+`Jest: "global" coverage threshold for branches (80%) not met: 50%`
+
+Also we can notice a new folder `coverage` in the root of the project,
+this folder is already ignored, because `CRA`. We may open the file
+`/coverage/lcov-report/index.html` in the browser.
+
+Note: Do not focus to much on getting 100% coverage. Full code coverage
+does not guarantee that you have written good tests covering critical
+parts of your application. An 80% coverage is well accepted goal to aim.
 
 # Assertions
 
