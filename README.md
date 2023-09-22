@@ -875,7 +875,26 @@ if no elements match.
 | `getByTitle` | `getAllByTitle`    |
 | `getByTestId` | `getAllByTestId`    |
 
+# Queries so far
+- `getBy..` and `getAllBy..` class of queries to assert if elements are present in the DOM.
+- `queryBy` and `queryAllBy` class of queries to assert if elements are not present in 
+the DOM.
+
 # findBy
+Although that based on what we know about Queries so far, looks like we have covered
+most of the cases. We do have a third case:
+### Appearance/ Disappearance
+What if elements are not present in the DOM to begin but make their way into the
+DOM after some time?
+
+For example, data that is fetched from a server will be rendered only after a few 
+milliseconds.
+
+For this case, we have a button that is initially displaying "Login" and after
+click this button it displays "Start Learning". There is no query that waits for
+an element to appear on the screen.
+Initially the is logged in is `false` and the "Start Learning" button is hidden.
+
 
 # Manual Queries
 
