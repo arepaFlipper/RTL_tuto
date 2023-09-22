@@ -575,6 +575,20 @@ file in `CRA` and it will automatically executed before JEST runs a test.
 - Assertions
 
 # What to test?
+There is not a rule, but there are some guidelines for what is worth
+testing, when writing a react component:
+- Test component renders.
+- Test component renders with props.
+- Test component renders in different states.
+- Test component reacts to events.
+
+<h3 style="color:red"> What not to test</h3>
+
+<ul style="color:red;">
+  <li>Implementation details.</li>
+  <li>Implementation details.</li>
+  <li>Code that is not important from a user point of view.</li>
+</ul>
 
 # React Testing Library(RTL) Queries
 
