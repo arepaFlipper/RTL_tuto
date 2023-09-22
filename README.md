@@ -591,6 +591,47 @@ testing, when writing a react component:
 </ul>
 
 # React Testing Library(RTL) Queries
+Every test we generally involves the following basic steps:
+<ol>
+  <li>Render the component</li>
+  <li>Find an element rendered by the component</li>
+  <li>Assert against the element found in step 2 which will pass or fail the test</li>
+</ol>
+
+For assertion, we expect passing in a value and combine it with a matcher
+function from jest or jest-DOM.
+
+Queries are the methods that Testing Library provides to find elements on the page
+
+To find a single element on the page, we have:
+- `getBY..`
+- `queryBy..`
+- `findBy..`
+
+To find multiple elements on the page, we have:
+- `getAllBy..`
+- `queryAllBy..`
+- `findAllBy..`
+
+<span style="color:yellow;">Notice:</span> The dots `..` are used to indicate the method need
+a suffix to form the actual query. 
+
+The suffix can be one of:
+<ul>
+  <li>Role</li>
+  <li>LabelText</li>
+  <li>PlaceHolderText</li>
+  <li>Text</li>
+  <li>DisplayValue</li>
+  <li>AltText</li>
+  <li>Title</li>
+  <li>TestId</li>
+</ul>
+
+In this section we are going to focus on the `getBy..` queries:
+
+- `getBy..` class of queries return the matching node for a query, and throw a
+descriptive error if no elements match or if more than one match is found.
 
 # getByRole
 
