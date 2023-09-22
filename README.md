@@ -713,6 +713,8 @@ matching the given text.
 Typically, you'd use this to find paragraph, div or span elements.
 
 # getByDisplayValue
+`getByDisplayValue` will return the `<input>` `<textarea>` or `<select>` element that
+has the matching display value.
 
 # getByAltText
 
