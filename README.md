@@ -668,7 +668,18 @@ To get a glimpse of all the HTML elements and their corresponding role visit:
 <a href="https://w3.org/TR/html-aria/#docconformance" target="_blank">
   table of HTML elements with their default and desired roles
 </a>
+
 # getByRole Options
+The `getByRole` method accepts a few options that can be used to tweak
+the querying logic.
+
+##### name
+The accessible name is for simple cases equal to:
+<ol>
+  <li>the label of a form element</li>
+  <li>the text content of a button </li>
+  <li>the value of the aria-label attribute</li>
+</ol>
 
 # getByLabelText
 
