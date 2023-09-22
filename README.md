@@ -704,6 +704,8 @@ preference for just about everything.
 element associated with that label.
 
 # getByPlaceholderText
+`getByPlaceholderText` will search for all elements with a placeholder attribute and 
+find one that matches the given text.
 
 # getByText
 
