@@ -910,6 +910,16 @@ found which match the given query.
 - The test will fail if the component takes more than `1000ms` to render.
 
 # Manual Queries
+### RTL Queries
+- `getBy` & `getAllBy`
+- `queryBy` & `queryAllBy`
+- `findBy` & `findAllBy`
+
+Manual queries - you can use the regular `querySelector` DOM API to find elements
+```
+const {container} = render(<MyComponent />);
+const foo = container.querySelector('[data-foo="bar"]');
+```
 
 # Debugging
 
