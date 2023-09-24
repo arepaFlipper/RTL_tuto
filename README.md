@@ -1032,6 +1032,33 @@ pointer('[/MouseLeft]')
 ```
 
 # Keyboard Interactions
+#### Utility API
+- `type()`
+- `clear()`
+- `selectOptions()`
+- `deselectOptions()`
+- `upload()`
+
+#### Clipboard APIs
+- `copy()`
+- `cut()`
+- `paste()`
+
+#### Convenience API
+`tab()`
+
+#### Keyboard API
+- `keyboard('foo') //translates to: f, o, o`
+- `keyboard('{Shift>}A{/Shift}') //translates to: Shift(down), A, Shift(up)`
+
+# Section Summary
+- user-event library.
+- CRA installs user-event but needs upgrading.
+- Mouse and keyboard interactions with Counter component.
+- Mouse click events.
+- Keyboard type and tab events.
+- Convenience APIs, utility APIs, clipboard APIs.
+- Pointer and keyboard APIs.
 
 # Providers
 
