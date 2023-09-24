@@ -1,12 +1,11 @@
 import './App.css';
-import Skills from './components/skills/Skills';
-import { Application } from './components/application/application';
-
-function App() {
+import { Application, Skills, Counter } from './components/';
+const App = () => {
   return (
     <div className="App">
-      <Application />
-      <Skills skills={['HTML', 'CSS', 'JavaScript']} />
+      {/* <Application /> */}
+      {/* <Skills skills={['HTML', 'CSS', 'JavaScript']} /> */}
+      <Counter />
     </div>
   );
 }
