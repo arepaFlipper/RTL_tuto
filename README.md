@@ -1061,6 +1061,10 @@ pointer('[/MouseLeft]')
 - Pointer and keyboard APIs.
 
 # Providers
+Install material-ui 
+```
+yarn add @mui/material @emotion/react @emotion/styled @mui/material/types
+```
 
 # Custom Render Functions
 

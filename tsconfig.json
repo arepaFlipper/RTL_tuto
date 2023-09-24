@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    // "types": ["@matire"]
     "target": "es5",
     "lib": [
       "dom",

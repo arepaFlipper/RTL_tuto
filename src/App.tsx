@@ -1,12 +1,13 @@
 import './App.css';
-import { Application, Skills, Counter } from './components/';
+import { MuiMode } from './components/';
+import AppProviders from './providers/AppProviders';
 const App = () => {
   return (
-    <div className="App">
-      {/* <Application /> */}
-      {/* <Skills skills={['HTML', 'CSS', 'JavaScript']} /> */}
-      <Counter />
-    </div>
+    <AppProviders>
+      <div className="App">
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 }
 
