@@ -1015,6 +1015,21 @@ yarn upgrade @testing-library/user-event@latest
 ```
 
 # Pointer Interactions
+### Convenience APIs
+- `click()` 
+- `dblClick()`
+- `tripleClick()`
+- `hover()`
+- `unhover()`
+
+### Pointer APIs
+```
+pointer({keys: '[MouseLeft]'})
+pointer({keys: '[MouseLeft][Mouseright]'})
+pointer('[MouseLeft][Mouseright]')
+pointer('[MouseLeft>]')
+pointer('[/MouseLeft]')
+```
 
 # Keyboard Interactions
 
