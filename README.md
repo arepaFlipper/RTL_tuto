@@ -922,8 +922,66 @@ const foo = container.querySelector('[data-foo="bar"]');
 ```
 
 # Debugging
+You can use `screen.debug` to visualize a formatted state of the DOM tree at 
+any point during the test and you can use `logRoles` from `@testing-library/dom`
+to print out a list of all the implicit aria - rules within the DOM tree:
+```
+ PASS  src/components/greeet/Greet.test.tsx
+ PASS  src/components/skills/Skills.test.tsx
+  ● Console
+
+    console.log
+      list:
+
+      Name "":
+      <ul />
+
+      --------------------------------------------------
+      listitem:
+
+      Name "":
+      <li />
+
+      Name "":
+      <li />
+
+      Name "":
+      <li />
+
+      --------------------------------------------------
+      button:
+
+      Name "Login":
+      <button />
+
+      --------------------------------------------------
+
+      at logRoles (node_modules/@testing-library/dom/dist/role-helpers.js:207:20)
+
+A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+
+Test Suites: 2 skipped, 2 passed, 2 of 4 total
+Tests:       2 skipped, 6 passed, 8 total
+Snapshots:   0 total
+Time:        4.13 s
+Ran all test suites.
+
+Watch Usage: Press w to show more.
+```
 
 # Testing Playground
+This a chrome extension to find the best queries to select elements when working with 
+testing library. It allows us to inspect the hierarchies in the developer tools and
+provides you with suggestions on how to select them, while encouraging good testing
+practices.
+
+# Section Summary
+- Query multiple elements.
+- `queryBy` and `queryAllBy`.
+- `findBy` and `findByAllBy`.
+- Manual queries.
+- Debug tests.
+- Testing playground extension.
 
 # User Interactions
 

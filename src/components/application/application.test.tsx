@@ -49,5 +49,7 @@ describe.skip("Application Testing", () => {
 
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
+
+    screen.getByRole('img', { name: /a person with a laptop/i })
   });
 });
