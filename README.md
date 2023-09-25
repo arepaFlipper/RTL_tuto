@@ -1061,12 +1061,22 @@ pointer('[/MouseLeft]')
 - Pointer and keyboard APIs.
 
 # Providers
+The context provider simulates a wrappers around an element.
+This save us from having to specify the wrapper option in every test.
 Install material-ui 
 ```
 yarn add @mui/material @emotion/react @emotion/styled @mui/material/types
 ```
 
+But the context provider wraps only a few components however for something
+like a theme provider or `redux store` provider.
 # Custom Render Functions
+Now the way to achieve a single wrapper across all tests is by writing a 
+custom render function.
+
+Visit: [React Testing Library setup](https://testing-library.com/docs/react-testing-library/setup)
+
+Create `./src/test-utils.tsx`
 
 # Custom React Hooks
 

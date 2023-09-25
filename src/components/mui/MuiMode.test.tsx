@@ -7,5 +7,5 @@ describe('MuiMode', () => {
     render(<MuiMode />, { wrapper: AppProviders });
     const headingElement = screen.getByRole('heading');
     expect(headingElement).toHaveTextContent('dark mode');
-  })
-})
+  });
+});
