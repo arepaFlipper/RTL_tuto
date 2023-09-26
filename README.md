@@ -1103,6 +1103,12 @@ could use a library like `React Testing Library`, whose helpers are wrapped with
 
 > "`Act` is a function that ensures updates are processed before assertions are made."
 
+# Section Summary
+- Wrapper option for providers
+- Custom render function
+- Test custom react hooks
+- Act utility
+
 # Mocking Functions
 
 # Mocking HTTP Request
