@@ -1,4 +1,4 @@
-import { ICounterTwo } from "./counter_two.types";
+import { ICounterTwo } from './counter_two.types'
 
 export const CounterTwo = ({
   count,
@@ -12,5 +12,5 @@ export const CounterTwo = ({
       {handleIncrement && <button onClick={handleIncrement}>Increment</button>}
       {handleDecrement && <button onClick={handleDecrement}>Decrement</button>}
     </div>
-  );
-};
+  )
+}

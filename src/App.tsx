@@ -1,6 +1,6 @@
-import "./App.css";
-import { Users } from "./components/";
-import AppProviders from "./providers/AppProviders";
+import './App.css'
+import { Users } from './components/'
+import AppProviders from './providers/AppProviders'
 const App = () => {
   return (
     <AppProviders>
@@ -8,7 +8,7 @@ const App = () => {
         <Users />
       </div>
     </AppProviders>
-  );
-};
+  )
+}
 
-export default App;
+export default App
