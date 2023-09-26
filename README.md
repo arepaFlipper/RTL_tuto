@@ -1110,6 +1110,8 @@ could use a library like `React Testing Library`, whose helpers are wrapped with
 - Act utility
 
 # Mocking Functions
+Mock functions allow you to test your code without having to worry about the
+actual implementation of a function.
 
 # Mocking HTTP Request
 
