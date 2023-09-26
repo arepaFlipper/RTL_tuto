@@ -1184,6 +1184,11 @@ To install it:
 ```
 
 # Husky
+Husky is a tool that helps improve your commits in GIT and more.
+```
+❯ yarn add husky -D
+❯ npx husky-init && yarn
+```
 
 # lint-staged
 
