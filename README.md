@@ -1191,5 +1191,11 @@ Husky is a tool that helps improve your commits in GIT and more.
 ```
 
 # lint-staged
+Run linters (and formatters) against staged git files.
+lint-staged is a tool for managing staged changes in Git.
+
+```
+yarn add -D lint-staged
+```
 
 # Wrapping                                          t
