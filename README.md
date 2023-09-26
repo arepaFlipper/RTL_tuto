@@ -1167,6 +1167,11 @@ avoiding bugs.
 
 CRA installs ESLint by default.
 
+### Neovim
+Install the following lsp plugins:
+    ◍ eslint-lsp eslint
+    ◍ eslint_d
+
 # Prettier
 
 # Husky
