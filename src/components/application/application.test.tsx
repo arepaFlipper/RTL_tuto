@@ -50,6 +50,15 @@ describe.skip("Application Testing", () => {
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
 
+
     screen.getByRole('img', { name: /a person with a laptop/i })
+  });
+});
+
+describe("ESlint tests", () => {
+  test("Application Testing", () => {
+    render(<Application />);
+    const submitButtonElement = screen.getByRole("button");
+    expect(submitButtonElement).not.toBeEnabled();
   });
 });
