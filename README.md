@@ -1126,6 +1126,7 @@ You can find the MSW setup instruction [here](https://mswjs.io/docs/getting-star
 # MSW Handlers
 
 # Testing with MSW
+To interact with MSW, you must modify the `src/setupTests.ts` tests setup file.
 
 # MSW Error Handling
 

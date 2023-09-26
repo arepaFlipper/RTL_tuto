@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const Users = () => {
+const Users = () => {
   const [users, setUsers] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   useEffect(() => {
@@ -15,7 +15,7 @@ export const Users = () => {
         setError("Error fetching users");
 
       }
-    })
+    })();
   }, []);
   return (
     <div>
@@ -31,3 +31,5 @@ export const Users = () => {
     </div>
   )
 }
+
+export default Users;
