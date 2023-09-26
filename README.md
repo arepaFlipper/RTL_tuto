@@ -1118,6 +1118,10 @@ For mocking when writing tests with React Testing Library(RTL), you can use
 the `Mock Service Worker (MSW)` to mock HTTP requests.
 
 # MSW Setup
+You can find the MSW setup instruction [here](https://mswjs.io/docs/getting-started/integrate/node).
+```
+❯ yarn add msw --dev
+```
 
 # MSW Handlers
 
