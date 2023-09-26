@@ -1173,6 +1173,14 @@ Install the following lsp plugins:
     ◍ eslint_d
 
 # Prettier
+Prettier is an opinionated code formatter that ensures that all outputted code
+conforms to a consistent style.
+
+To install it:
+```
+
+❯ yarn add prettier -D -E
+```
 
 # Husky
 
