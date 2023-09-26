@@ -1079,6 +1079,9 @@ Visit: [React Testing Library setup](https://testing-library.com/docs/react-test
 Create `./src/test-utils.tsx`
 
 # Custom React Hooks
+When testing react hooks, you only rely on the `renderHook`, due to 
+in React we can not use hooks from another component that is not 
+a react component.
 
 # Act Utility
 
