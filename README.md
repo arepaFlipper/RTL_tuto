@@ -1130,6 +1130,12 @@ To interact with MSW, you must modify the `src/setupTests.ts` tests setup file.
 
 # MSW Error Handling
 
+# Section Summary
+- Mocking Functions
+- Mocking HTTP Request
+- MSW Setup
+- MSW Handlers
+
 # Static Analysis Testing
 
 # Eslint
