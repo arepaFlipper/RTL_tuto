@@ -1114,6 +1114,8 @@ Mock functions allow you to test your code without having to worry about the
 actual implementation of a function.
 
 # Mocking HTTP Request
+For mocking when writing tests with React Testing Library(RTL), you can use
+the `Mock Service Worker (MSW)` to mock HTTP requests.
 
 # MSW Setup
 
