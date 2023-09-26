@@ -1137,6 +1137,28 @@ To interact with MSW, you must modify the `src/setupTests.ts` tests setup file.
 - MSW Handlers
 
 # Static Analysis Testing
+Process of verifying that your code meets certain expectations without actually
+running it:
+- Ensure consistent style and formatting.
+- Check for common mistakes and possible bugs.
+- Limit the complexity of code and
+- Verify type consistency.
+
+All types of tests run the code and then compare the outcome against known
+expected outputs to see if everything works OK.
+
+Static testing analyses aspects such as readability, consistency, error handling,
+type checking, and alignment with best practices.
+
+Testing checks if you code works or not, whereas static analysis checks if it is
+written well or not.
+
+When it comes to testing react apps we can employ five tools for static testing:
+- TypeScript
+- ESlint
+- Prettier
+- Husky
+- lint-staged
 
 # Eslint
 
