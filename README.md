@@ -1084,6 +1084,24 @@ in React we can not use hooks from another component that is not
 a react component.
 
 # Act Utility
+When writing UI tests, tasks like rendering, user events, or data fetching
+can be considered as "units" of interaction with a user interface. `react-dom/test-utils`
+provides a helper called `act()` that makes sure all updates related to these "units"
+have been processed and applied to the DOM before you make any assertions:
+```
+act(()=>{
+  //render components
+});
+// make assertions
+```
+
+This helps make your tests run closer to what real users would experience when using your
+application. The rest of these examples use `act()` to make these guarantees.
+
+You might find using `act()` directly a bit too verbose. To avoid some of the boilerplate, you
+could use a library like `React Testing Library`, whose helpers are wrapped with `act()`.
+
+> "`Act` is a function that ensures updates are processed before assertions are made."
 
 # Mocking Functions
 
