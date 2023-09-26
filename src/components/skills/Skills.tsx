@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { TSkills } from './Skills.types';
+import { useState, useEffect } from "react";
+import { TSkills } from "./Skills.types";
 
 const Skills = ({ skills }: TSkills) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -14,13 +14,11 @@ const Skills = ({ skills }: TSkills) => {
     <>
       <ul>
         {skills.map((skill: string) => {
-          return <li key={skill}>{skill}</li>
+          return <li key={skill}>{skill}</li>;
         })}
       </ul>
       {isLoggedIn ? (
-        <button>
-          Start learning
-        </button>
+        <button>Start learning</button>
       ) : (
         <button onClick={() => setIsLoggedIn(true)}>Login</button>
       )}
