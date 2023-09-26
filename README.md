@@ -140,7 +140,8 @@ git version 2.42.0
 3. open you IDE inside the project folder
 4. Use CRA:
 ```
-❯ yarn create react-app . --template typescript
+❯ npm create vite@latest .
+❯ npm install @testing-library/react @testing-library/jest-dom --save-dev
 ```
 
 In this template the JEST seems to be not included in the package.json dependency list. But 
