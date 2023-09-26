@@ -1180,6 +1180,7 @@ To install it:
 ```
 
 ❯ yarn add prettier -D -E
+❯ yarn add eslint-config-prettier -D
 ```
 
 # Husky
